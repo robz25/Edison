@@ -8,7 +8,7 @@ from ubidots import ApiClient
 for i in range(0,5):
     try:
         print "Connecting to Ubidots"
-        api = ApiClient(token='9a50f3a5664b25e9d84dd05a2b20ed95e2e5dfff') # Replace with your Ubidots Token here
+        api = ApiClient(token='BzMNrKvGJRpWYI0lA11ZC8rjLCYbQZ') # Replace with your Ubidots Token here
         break
 
     except:

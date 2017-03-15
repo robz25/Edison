@@ -21,9 +21,12 @@ a0 = mraa.Aio(0)
 a1 = mraa.Aio(1)
 
 # Read analog pins and send values to Ubidots
-while(1):
-    try:
-        api.save_collection([{'variable': '58c601877625420177532bae','value':a0.read()}, {'variable': '58c6018f7625420177532c05','value':a1.read()}])
-    except:
-        print("Couldn't send data.")
-        continue
+try:
+    while(1):
+        try:
+            api.save_collection([{'variable': '58c601877625420177532bae','value':a0.read()}, {'variable': '58c6018f7625420177532c05','value':a1.read()}])
+        except:
+            print("Couldn't send data.")
+            continue
+except KeyboardInterrupt:
+        GPIO.cleanup()

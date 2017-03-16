@@ -21,4 +21,4 @@ try:
    # os.system(print2)
     
 except KeyboardInterrupt:
-  GPIO.cleanup()
+  #GPIO.cleanup()

@@ -30,3 +30,4 @@ try:
             continue
 except KeyboardInterrupt:
         GPIO.cleanup()
+	break

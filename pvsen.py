@@ -13,8 +13,8 @@ try:
   while(1):
     a0 = mraa.Aio(0)
     a1 = mraa.Aio(1)
-    print1 = pvc+" "+sen1+" "+'"'+a0.read()+'"'
-    print2 = pvc+" "+sen2+" "+'"'+a1.read()+'"'
+    print1 = pvc+" "+sen1+" "+'"'+str(a0.read())+'"'
+    print2 = pvc+" "+sen2+" "+'"'+str(a1.read())+'"'
     print print1
     print print2
     os.system(print1)

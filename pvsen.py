@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import os, time, mraa
+from ubidots import ApiClient
 
 init = 'pvcloud init "https://costaricamakers.com/pvcloud/backend/vse.php" 104 d063c414e35456bb54db9c4589699af6869bd272 "Robinson"'
 sen1 = '"Sensor de luz"'

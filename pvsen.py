@@ -8,7 +8,7 @@ pvc = 'pvcloud write '
 os.system(init)
 
 try:
-  while(TRUE):
+  while(1):
     a0 = mraa.Aio(0)
     a1 = mraa.Aio(1)
     print1 = pvc+" "+sen1+" "+'"'+a0+'"'

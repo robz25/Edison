@@ -35,8 +35,8 @@ try:
     print print1
     print print2
     print print3
-    os.system(print1)
-    os.system(print2)
-    os.system(print3)
+    #os.system(print1)
+    #os.system(print2)
+    #os.system(print3)
 except KeyboardInterrupt:
   GPIO.cleanup()

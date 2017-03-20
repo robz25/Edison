@@ -11,9 +11,9 @@ from ubidots import ApiClient#solo necesario para el call GPIO.cleanup()
 B = 4275.00#le pongo decimales para que python no redondee automaticamente
 r0 = 100000.00#resisterncia desconectado
 
-sen1 = '"Sensor de luz"'
-sen2 = '"Temperatura °C:"'
-sen3 = '"Sonido"'
+sen1 = '"Sensor en A0"'
+sen2 = '"Sensor en A1`° °C"'
+sen3 = '"Sensor en A2 "'
 
 
 

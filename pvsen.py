@@ -8,8 +8,8 @@ from ubidots import ApiClient#solo necesario para el call GPIO.cleanup()
 
 #Variables de conversion
 #ref: http://wiki.seeed.cc/Grove-Temperature_Sensor_V1.2/
-B = 4275.0#le pongo decimales para que python no redondee automaticamente
-r0 = 100000.0#resisterncia desconectado
+B = 4275.00#le pongo decimales para que python no redondee automaticamente
+r0 = 100000.00#resisterncia desconectado
 
 init = 'pvcloud init "https://costaricamakers.com/pvcloud/backend/vse.php" 104 d063c414e35456bb54db9c4589699af6869bd272 "Robinson"'
 sen1 = '"Sensor de luz"'
@@ -18,7 +18,7 @@ sen3 = '"Potenciometro"'
 pvc = 'pvcloud write '
 
 os.system(init)
-loop = 0
+
 try:
   while(1):
     a0 = mraa.Aio(0)

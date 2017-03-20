@@ -12,6 +12,7 @@ B = 4275.00#le pongo decimales para que python no redondee automaticamente
 r0 = 100000.00#resisterncia desconectado
 
 init = 'pvcloud init "https://costaricamakers.com/pvcloud/backend/vse.php" 104 d063c414e35456bb54db9c4589699af6869bd272 "Robinson"'
+myurl = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/temperatura/'
 sen1 = '"Sensor de luz"'
 sen2 = '"Temperatura °C:"'
 sen3 = '"Sonido"'
@@ -32,6 +33,8 @@ try:
     print1 = pvc+" "+sen1+" "+'"'+str(a0.read())+'"'
     print2 = pvc+" "+sen2+" "+'"'+str(temperatura)+'"'
     print3 = pvc+" "+sen3+" "+'"'+str(a2.read())+'"'
+    http = myurl + str(temperatura)
+    contents = url.get(http)
     print print1
     print print2
     print print3

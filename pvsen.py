@@ -14,7 +14,7 @@ r0 = 100000.00#resisterncia desconectado
 init = 'pvcloud init "https://costaricamakers.com/pvcloud/backend/vse.php" 104 d063c414e35456bb54db9c4589699af6869bd272 "Robinson"'
 sen1 = '"Sensor de luz"'
 sen2 = '"Temperatura °C:"'
-sen3 = '"Potenciometro"'
+sen3 = '"Sonido"'
 pvc = 'pvcloud write '
 
 os.system(init)

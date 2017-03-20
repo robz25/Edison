@@ -36,6 +36,7 @@ try:
     print print2
     print print3
     tiempo = a1.read()
+    print "tiempo", tiempo
     tiempo = tiempo/100
     print "tiempo", tiempo
     time.sleep(tiempo)

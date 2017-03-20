@@ -1,4 +1,6 @@
 #!/usr/bin/python
+# -*- coding: latin-1 -*-
+# -*- coding: utf-8  -*-
 #Script de Python para enviar datos de sensores a PVcloud usando Edison
 #Autor Robin Gonzalez
 

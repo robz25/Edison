@@ -26,24 +26,17 @@ try:
     a2 = mraa.Aio(2)
     
     r = 1023.0000/a1.read()-1
-    print "r ", r
     r = r*r0
-    print "r ", r
-    print " r/r0 ", r/r0
     temperatura = 1/(math.log(r/r0)/B+1/298.15)-273.15
-    print "Temperatura °C: ",temperatura
-    time.sleep(1)
-        
-   #print1 = pvc+" "+sen1+" "+'"'+str(a0.read())+'"'
-    #print2 = pvc+" "+sen2+" "+'"'+str(temperatura)+'"'
-    #print3 = pvc+" "+sen3+" "+'"'+str(a2.read())+'"'
-    #print print1
-    #print print2
-    #print print3
-    #os.system(print1)
-    #os.system(print2)
-    #os.system(print3)
-    loop = loop +1
-    print "loop  ", loop
+               
+    print1 = pvc+" "+sen1+" "+'"'+str(a0.read())+'"'
+    print2 = pvc+" "+sen2+" "+'"'+str(temperatura)+'"'
+    print3 = pvc+" "+sen3+" "+'"'+str(a2.read())+'"'
+    print print1
+    print print2
+    print print3
+    os.system(print1)
+    os.system(print2)
+    os.system(print3)
 except KeyboardInterrupt:
   GPIO.cleanup()

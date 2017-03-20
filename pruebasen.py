@@ -11,13 +11,11 @@ from ubidots import ApiClient#solo necesario para el call GPIO.cleanup()
 B = 4275.00#le pongo decimales para que python no redondee automaticamente
 r0 = 100000.00#resisterncia desconectado
 
-init = 'pvcloud init "https://costaricamakers.com/pvcloud/backend/vse.php" 104 d063c414e35456bb54db9c4589699af6869bd272 "Robinson"'
 sen1 = '"Sensor de luz"'
 sen2 = '"Temperatura °C:"'
 sen3 = '"Sonido"'
-pvc = 'pvcloud write '
 
-os.system(init)
+
 
 try:
   while(1):
@@ -29,9 +27,9 @@ try:
     r = r*r0
     temperatura = 1/(math.log(r/r0)/B+1/298.15)-273.15
                
-    print1 = pvc+" "+sen1+" "+'"'+str(a0.read())+'"'
-    print2 = pvc+" "+sen2+" "+'"'+str(temperatura)+'"'
-    print3 = pvc+" "+sen3+" "+'"'+str(a2.read())+'"'
+    print1 = sen1+" "+'"'+str(a0.read())+'"'
+    print2 = sen2+" "+'"'+str(temperatura)+'"'
+    print3 = sen3+" "+'"'+str(a2.read())+'"'
     print print1
     print print2
     print print3
@@ -40,8 +38,5 @@ try:
     tiempo = tiempo/100
     print "tiempo", tiempo
     time.sleep(tiempo)
-    #os.system(print1)
-    #os.system(print2)
-    #os.system(print3)
 except KeyboardInterrupt:
   GPIO.cleanup()

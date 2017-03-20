@@ -35,6 +35,10 @@ try:
     print print1
     print print2
     print print3
+    tiempo = a2.read()
+    tiempo = tiempo/100
+    print "tiempo", tiempo
+    time.sleep(tiempo)
     #os.system(print1)
     #os.system(print2)
     #os.system(print3)

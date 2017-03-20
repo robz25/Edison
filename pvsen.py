@@ -35,7 +35,7 @@ try:
     print print1
     print print2
     print print3
-    tiempo = a1.read()
+    tiempo = a0.read()
     print "tiempo", tiempo
     tiempo = tiempo/100
     print "tiempo", tiempo

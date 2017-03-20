@@ -1,4 +1,4 @@
-##!/usr/bin/python
+ °##!/usr/bin/python
 # -*- coding: utf-8  -*-
 #Script de Python para enviar datos de sensores a PVcloud usando Edison
 #Autor Robin Gonzalez
@@ -31,7 +31,7 @@ try:
     print "r ", r
     print " r/r0 ", r/r0
     temperatura = 1/(math.log(r/r0)/B+1/298.15)-273.15
-    print "Temperatura: ",temperatura
+    print "Temperatura °C: ",temperatura
     time.sleep(1)
         
    #print1 = pvc+" "+sen1+" "+'"'+str(a0.read())+'"'

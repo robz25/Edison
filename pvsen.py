@@ -1,3 +1,4 @@
+
 #!/usr/bin/python
 # -*- coding: latin-1 -*-
 # -*- coding: utf-8  -*-
@@ -33,6 +34,7 @@ try:
     print " r/r0 ", r/r0
     temperatura = 1/(math.log(r/r0)/B+1/298.15)-273.15
     print "Temperatura: ",temperatura
+    time.sleep(1)
         
    #print1 = pvc+" "+sen1+" "+'"'+str(a0.read())+'"'
     #print2 = pvc+" "+sen2+" "+'"'+str(temperatura)+'"'

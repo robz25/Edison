@@ -32,7 +32,7 @@ try:
     print "r ", r
     print " r/r0 ", r/r0
     temperatura = 1/(math.log(r/r0)/B+1/298.15)-273.15
-    print temperatura
+    print "Temperatura: ",temperatura
         
    #print1 = pvc+" "+sen1+" "+'"'+str(a0.read())+'"'
     #print2 = pvc+" "+sen2+" "+'"'+str(temperatura)+'"'

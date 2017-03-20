@@ -17,7 +17,7 @@ sen2 = '"Temperatura °C:"'
 sen3 = '"Sonido"'
 pvc = 'pvcloud write '
 
-os.system(init)
+#os.system(init)
 
 try:
   while(1):

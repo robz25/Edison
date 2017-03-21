@@ -4,6 +4,8 @@
 #Autor Robin Gonzalez
 
 import os, time, mraa, math
+import urllib2
+
 from ubidots import ApiClient#solo necesario para el call GPIO.cleanup()
 
 #Variables de conversion
@@ -34,7 +36,7 @@ try:
     print2 = pvc+" "+sen2+" "+'"'+str(temperatura)+'"'
     print3 = pvc+" "+sen3+" "+'"'+str(a2.read())+'"'
     http = myurl + str(temperatura)
-    contents = url.get(http)
+    contents = urllib2.urlopen(http)
     print print1
     print print2
     print print3

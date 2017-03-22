@@ -14,7 +14,9 @@ B = 4275.00#le pongo decimales para que python no redondee automaticamente
 r0 = 100000.00#resisterncia desconectado
 
 init = 'pvcloud init "https://costaricamakers.com/pvcloud/backend/vse.php" 104 d063c414e35456bb54db9c4589699af6869bd272 "Robinson"'
-myurl = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/temperatura/'
+links2 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/temperatura/'
+links3 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/sonido/'
+links1 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/luz/'
 sen1 = '"Sensor de luz"'
 sen2 = '"Temperatura °C:"'
 sen3 = '"Sonido"'
@@ -35,8 +37,12 @@ try:
     print1 = pvc+" "+sen1+" "+'"'+str(a0.read())+'"'
     print2 = pvc+" "+sen2+" "+'"'+str(temperatura)+'"'
     print3 = pvc+" "+sen3+" "+'"'+str(a2.read())+'"'
-    http = myurl + str(temperatura)
-    contents = urllib2.urlopen(http)
+    http1 = links1 + str(a0.read())
+    http2 = links2 + str(temperatura)
+    http3 = links3 + str(a2.read())
+    contents1 = urllib2.urlopen(http1)
+    contents2 = urllib2.urlopen(http2)
+    contents3 = urllib2.urlopen(http3)
     print print1
     print print2
     print print3

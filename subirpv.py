@@ -38,7 +38,7 @@ try:
     temperatura = 1/(math.log(r/r0)/B+1/298.15)-273.15
     sonido = a2.read()
     luz = a0.read()
-    sonido = porcentaje(900, sonido)
+    sonido = porcentaje(850, sonido)
     luz = porcentaje(800,luz)
                
     print1 = pvc+" "+sen1+" "+'"'+str(luz)+'"'

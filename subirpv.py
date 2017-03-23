@@ -26,20 +26,24 @@ pvc = 'pvcloud write '
 
 try:
   while(1):
-    a0 = mraa.Aio(0)
-    a1 = mraa.Aio(1)
-    a2 = mraa.Aio(2)
+    a0 = mraa.Aio(0)#luz
+    a1 = mraa.Aio(1)#temperatura
+    a2 = mraa.Aio(2)#sonido
     
     r = 1023.0000/a1.read()-1
     r = r*r0
     temperatura = 1/(math.log(r/r0)/B+1/298.15)-273.15
+    sonido = a2.read()
+    luz = a0.read()
+    sonido = porcentaje(900, sonido)
+    luz = porcentaje(800,luz)
                
-    print1 = pvc+" "+sen1+" "+'"'+str(a0.read())+'"'
+    print1 = pvc+" "+sen1+" "+'"'+str(luz)+'"'
     print2 = pvc+" "+sen2+" "+'"'+str(temperatura)+'"'
-    print3 = pvc+" "+sen3+" "+'"'+str(a2.read())+'"'
-    http1 = links1 + str(a0.read())
+    print3 = pvc+" "+sen3+" "+'"'+str(sonido)+'"'
+    http1 = links1 + str(luz)
     http2 = links2 + str(temperatura)
-    http3 = links3 + str(a2.read())
+    http3 = links3 + str(sonido)
     contents1 = urllib2.urlopen(http1)
     contents2 = urllib2.urlopen(http2)
     contents3 = urllib2.urlopen(http3)
@@ -51,3 +55,6 @@ try:
     #os.system(print3)
 except KeyboardInterrupt:
   GPIO.cleanup()
+  
+  def porcentaje(maximo, valor):
+    return valor*100/maximo

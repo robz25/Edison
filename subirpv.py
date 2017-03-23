@@ -17,9 +17,16 @@ B = 4275.00#le pongo decimales para que python no redondee automaticamente
 r0 = 100000.00#resisterncia desconectado
 
 init = 'pvcloud init "https://costaricamakers.com/pvcloud/backend/vse.php" 104 d063c414e35456bb54db9c4589699af6869bd272 "Robinson"'
-links2 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/temperatura/'
-links3 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/sonido/'
-links1 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/luz/'
+#links2 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/temperatura/'
+#links3 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/sonido/'
+#links1 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/luz/'
+#links1 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/101/95b8bd7b72f37a29ae9644396326f343f5df0c09/Sensor_luz_porc/'
+#links2 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/101/95b8bd7b72f37a29ae9644396326f343f5df0c09/Sensor_temperatura_C/'
+#links3 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/101/95b8bd7b72f37a29ae9644396326f343f5df0c09/Sensor_sonido_porc/'
+links1 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/105/1353cf7b0e96acfb3917599df7289611bd92c9b0/Sensor_luz_porc/'
+links2 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/105/1353cf7b0e96acfb3917599df7289611bd92c9b0/Sensor_temperatura_C/'
+links3 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/105/1353cf7b0e96acfb3917599df7289611bd92c9b0/Sensor_sonido_porc/'
+
 sen1 = '"Sensor luz %:"'
 sen2 = '"Sensor temperatura °C:"'
 sen3 = '"Sensor sonido %:"'

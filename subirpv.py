@@ -52,7 +52,7 @@ try:
     sonido = porcentaje(850, sonido)
     luz = porcentaje(800,luz)
     unido = '{"Sensor_Luz": "'+str(luz)+'", "Sensor_Temperatura":"'+str(temperatura)+'", "Sensor_sonido":""'+str(sonido)+'",}'
-               
+    print unido
     print1 = pvc+" "+sen1+" "+'"'+str(luz)+'"'
     print2 = pvc+" "+sen2+" "+'"'+str(temperatura)+'"'
     print3 = pvc+" "+sen3+" "+'"'+str(sonido)+'"'

@@ -20,9 +20,9 @@ init = 'pvcloud init "https://costaricamakers.com/pvcloud/backend/vse.php" 104 d
 links2 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/temperatura/'
 links3 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/sonido/'
 links1 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/luz/'
-sen1 = '"Sensor de luz"'
-sen2 = '"Temperatura °C:"'
-sen3 = '"Sonido"'
+sen1 = '"Sensor luz %:"'
+sen2 = '"Sensor temperatura °C:"'
+sen3 = '"Sensor sonido %:"'
 pvc = 'pvcloud write '
 
 #os.system(init)

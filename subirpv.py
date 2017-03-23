@@ -7,6 +7,9 @@ import os, time, mraa, math
 import urllib2
 
 from ubidots import ApiClient#solo necesario para el call GPIO.cleanup()
+#funciones
+def porcentaje(maximo, valor):
+  return valor*100/maximo
 
 #Variables de conversion
 #ref: http://wiki.seeed.cc/Grove-Temperature_Sensor_V1.2/
@@ -56,5 +59,4 @@ try:
 except KeyboardInterrupt:
   GPIO.cleanup()
   
-  def porcentaje(maximo, valor):
-    return valor*100/maximo
+

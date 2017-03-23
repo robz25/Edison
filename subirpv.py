@@ -51,7 +51,7 @@ try:
     luz = a0.read()
     sonido = porcentaje(850, sonido)
     luz = porcentaje(800,luz)
-    unido = '{"Sensor_Luz": "'+str(luz)+'", "Sensor_Temperatura":"'+str(temperatura)+'", "Sensor_sonido":""'+str(sonido)+'",}'
+    unido = '{"Sensor_Luz": "'+str(luz)+'", "Sensor_Temperatura":"'+str(temperatura)+'", "Sensor_sonido":"'+str(sonido)+'"}'
     print unido
     print1 = pvc+" "+sen1+" "+'"'+str(luz)+'"'
     print2 = pvc+" "+sen2+" "+'"'+str(temperatura)+'"'
@@ -60,6 +60,7 @@ try:
     http2 = links2 + str(temperatura)
     http3 = links3 + str(sonido)
     unido = link + str(sonido)
+    print unido
     #contents1 = urllib2.urlopen(http1)
     #contents2 = urllib2.urlopen(http2)
     contents3 = urllib2.urlopen(http3)

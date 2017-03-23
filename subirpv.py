@@ -29,6 +29,7 @@ links3 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/
 #links1 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/105/1353cf7b0e96acfb3917599df7289611bd92c9b0/Sensor_luz_porc/'
 #links2 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/105/1353cf7b0e96acfb3917599df7289611bd92c9b0/Sensor_temperatura_C/'
 #links3 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/105/1353cf7b0e96acfb3917599df7289611bd92c9b0/Sensor_sonido_porc/'
+link = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/'
 
 sen1 = '"Sensor luz %:"'
 sen2 = '"Sensor temperatura °C:"'
@@ -50,6 +51,7 @@ try:
     luz = a0.read()
     sonido = porcentaje(850, sonido)
     luz = porcentaje(800,luz)
+    unido = '{"Sensor_Luz": "'+str(luz)+'", "Sensor_Temperatura":"'+str(temperatura)+'", "Sensor_sonido":""'+str(sonido)+'",}'
                
     print1 = pvc+" "+sen1+" "+'"'+str(luz)+'"'
     print2 = pvc+" "+sen2+" "+'"'+str(temperatura)+'"'
@@ -57,9 +59,11 @@ try:
     http1 = links1 + str(luz)
     http2 = links2 + str(temperatura)
     http3 = links3 + str(sonido)
-    contents1 = urllib2.urlopen(http1)
-    contents2 = urllib2.urlopen(http2)
-    contents3 = urllib2.urlopen(http3)
+    unido = link + str(sonido)
+    #contents1 = urllib2.urlopen(http1)
+    #contents2 = urllib2.urlopen(http2)
+    #contents3 = urllib2.urlopen(http3)
+    contents4 = urllib2.urlopen(unido)
     print print1
     print print2
     print print3

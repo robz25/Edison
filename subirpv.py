@@ -19,12 +19,12 @@ r0 = 100000.00#resisterncia desconectado
 init = 'pvcloud init "https://costaricamakers.com/pvcloud/backend/vse.php" 104 d063c414e35456bb54db9c4589699af6869bd272 "Robinson"'
 #miap
 #links2 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/temperatura/'
-#links3 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/sonido/'
+links3 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/sonido/'
 #links1 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/104/d063c414e35456bb54db9c4589699af6869bd272/luz/'
 #sing
 links1 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/101/95b8bd7b72f37a29ae9644396326f343f5df0c09/Sensor_luz_porc/'
 links2 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/101/95b8bd7b72f37a29ae9644396326f343f5df0c09/Sensor_temperatura_C/'
-links3 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/101/95b8bd7b72f37a29ae9644396326f343f5df0c09/Sensor_sonido_porc/'
+#links3 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/101/95b8bd7b72f37a29ae9644396326f343f5df0c09/Sensor_sonido_porc/'
 #miap2
 #links1 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/105/1353cf7b0e96acfb3917599df7289611bd92c9b0/Sensor_luz_porc/'
 #links2 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/105/1353cf7b0e96acfb3917599df7289611bd92c9b0/Sensor_temperatura_C/'
@@ -62,8 +62,8 @@ try:
     unido = link + str(sonido)
     #contents1 = urllib2.urlopen(http1)
     #contents2 = urllib2.urlopen(http2)
-    #contents3 = urllib2.urlopen(http3)
-    contents4 = urllib2.urlopen(unido)
+    contents3 = urllib2.urlopen(http3)
+    #contents4 = urllib2.urlopen(unido)
     print print1
     print print2
     print print3

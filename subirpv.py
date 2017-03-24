@@ -63,8 +63,8 @@ try:
     print unido
     #contents1 = urllib2.urlopen(http1)
     #contents2 = urllib2.urlopen(http2)
-    contents3 = urllib2.urlopen(http3)
-    #contents4 = urllib2.urlopen(unido)
+    #contents3 = urllib2.urlopen(http3)
+    contents4 = urllib2.urlopen(unido)
     print print1
     print print2
     print print3

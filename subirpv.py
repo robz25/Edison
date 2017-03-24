@@ -59,7 +59,7 @@ try:
     http1 = links1 + str(luz)
     http2 = links2 + str(temperatura)
     http3 = links3 + str(sonido)
-    unido = link + str(sonido)
+    unido = link + unido
     print unido
     #contents1 = urllib2.urlopen(http1)
     #contents2 = urllib2.urlopen(http2)

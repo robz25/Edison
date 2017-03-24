@@ -24,7 +24,7 @@ links3 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/
 #sing
 links1 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/101/95b8bd7b72f37a29ae9644396326f343f5df0c09/Sensor_luz_porc/'
 links2 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/101/95b8bd7b72f37a29ae9644396326f343f5df0c09/Sensor_temperatura_C/'
-#links3 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/101/95b8bd7b72f37a29ae9644396326f343f5df0c09/Sensor_sonido_porc/'
+links3 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/101/95b8bd7b72f37a29ae9644396326f343f5df0c09/Sensor_sonido_porc/'
 #miap2
 #links1 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/105/1353cf7b0e96acfb3917599df7289611bd92c9b0/Sensor_luz_porc/'
 #links2 = 'https://costaricamakers.com/pvcloud/backend/vse.php/appdata_write_get/105/1353cf7b0e96acfb3917599df7289611bd92c9b0/Sensor_temperatura_C/'
@@ -61,10 +61,10 @@ try:
     http3 = links3 + str(sonido)
     unido = link + unido
     print unido
-    #contents1 = urllib2.urlopen(http1)
-    #contents2 = urllib2.urlopen(http2)
-    #contents3 = urllib2.urlopen(http3)
-    contents4 = urllib2.urlopen(unido)
+    contents1 = urllib2.urlopen(http1)
+    contents2 = urllib2.urlopen(http2)
+    contents3 = urllib2.urlopen(http3)
+    #contents4 = urllib2.urlopen(unido)
     print print1
     print print2
     print print3
